@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventEase - Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+    <div class="dashboard-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="/" class="logo">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>EventEase</span>
+                </a>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#overview" class="active"><i class="fas fa-chart-line"></i> Overview</a></li>
+                    <li><a href="#events"><i class="fas fa-calendar-alt"></i> Events</a></li>
+                    <li><a href="#registrations"><i class="fas fa-user-plus"></i> Registrations</a></li>
+                    <li><a href="#reports"><i class="fas fa-chart-pie"></i> Reports</a></li>
+                    <li><a href="#settings"><i class="fas fa-cog"></i> Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <!-- Top Navbar -->
+            <header class="top-navbar">
+                <div class="navbar-left">
+                    <button class="menu-toggle" aria-label="Toggle menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                </div>
+                <div class="navbar-right">
+                     <button class="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a href="#" class="icon-button" aria-label="Notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </a>
+                    <a href="#" class="icon-button" aria-label="Messages">
+                         <i class="fas fa-envelope"></i>
+                         <span class="badge">5</span>
+                    </a>
+                    <div class="profile-section">
+                        <img src="https://via.placeholder.com/30" alt="User Avatar" class="avatar">
+                        <span>Admin User</span>
+                         <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <section class="dashboard-content">
+                <h2>Dashboard Overview</h2>
+
+                <!-- Data Cards -->
+                <div class="data-cards-grid">
+                    <div class="data-card">
+                        <div class="card-icon"><i class="fas fa-ticket-alt"></i></div>
+                        <div class="card-data">
+                            <p class="card-label">Total Tickets</p>
+                            <span class="card-value">15000</span>
+                            <span class="card-change positive"><i class="fas fa-caret-up"></i> 12%</span>
+                        </div>
+                    </div>
+                    <div class="data-card">
+                        <div class="card-icon"><i class="fas fa-dollar-sign"></i></div>
+                        <div class="card-data">
+                            <p class="card-label">Total Revenue</p>
+                            <span class="card-value">$250k</span>
+                            <span class="card-change negative"><i class="fas fa-caret-down"></i> 5%</span>
+                        </div>
+                    </div>
+                    <div class="data-card">
+                         <div class="card-icon"><i class="fas fa-calendar-check"></i></div>
+                        <div class="card-data">
+                            <p class="card-label">Events Hosted</p>
+                            <span class="card-value">150</span>
+                            <span class="card-change positive"><i class="fas fa-caret-up"></i> 8%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sales Trends Graph -->
+                <div class="dashboard-card sales-trends-card">
+                    <h3>Sales Trends</h3>
+                    <div class="graph-placeholder">Line graph will be here</div>
+                </div>
+
+                <!-- Best Selling Events Donut Chart -->
+                 <div class="dashboard-card best-selling-card">
+                    <h3>Best Selling Events</h3>
+                    <div class="chart-placeholder">Donut chart will be here</div>
+                </div>
+
+                <!-- Ticket Stats Graph -->
+                <div class="dashboard-card ticket-stats-card">
+                    <h3>Ticket Statistics</h3>
+                    <div class="graph-placeholder">Bar graph will be here</div>
+                </div>
+
+                <!-- Ticket Sold Today Card -->
+                <div class="dashboard-card ticket-sold-today-card">
+                    <h3>Tickets Sold Today</h3>
+                     <span class="today-value">456,502 <small>pcs</small></span>
+                     <div class="graph-placeholder mini">Mini line graph will be here</div>
+                     <p class="detail-text">Details about today's sales...</p>
+                     <a href="#" class="view-detail-link">View Detail <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Recent Event List -->
+                <div class="dashboard-card recent-events-list-card">
+                     <h3>Recent Event List</h3>
+                    <ul>
+                        <li>
+                            <img src="https://via.placeholder.com/50" alt="Event Thumbnail">
+                            <div class="event-info">
+                                <p class="event-title">Event Title 1</p>
+                                <p class="event-date">Date | Location</p>
+                            </div>
+                        </li>
+                         <li>
+                            <img src="https://via.placeholder.com/50" alt="Event Thumbnail">
+                            <div class="event-info">
+                                <p class="event-title">Event Title 2</p>
+                                <p class="event-date">Date | Location</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Calendar Widget -->
+                 <div class="dashboard-card calendar-widget-card">
+                    <h3>Calendar</h3>
+                     <div id="calendar-placeholder">Interactive calendar will be here</div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

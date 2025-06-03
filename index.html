@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventEase - Campus Event Management Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <i class="fas fa-calendar-check"></i>
+                <span>EventEase</span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#events">Events</a>
+                <a href="register.html">Register</a>
+                <a href="index.html#about">About</a>
+                <a href="dashboard.html">Dashboard</a>
+            </div>
+
+            <div class="nav-buttons">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="login.html" class="btn-login">Login</a>
+                <a href="/signup" class="btn-signup">Sign Up</a>
+            </div>
+
+            <button class="mobile-menu" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>College Events Made Simple</h1>
+            <p class="hero-subtitle">Discover, join, and create amazing events on campus.</p>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="1500">0</span>
+                    <span class="stat-label">Active Events</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="500">0</span>
+                    <span class="stat-label">Colleges</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="50000">0</span>
+                    <span class="stat-label">Users</span>
+                </div>
+            </div>
+
+            <div class="hero-buttons">
+                <a href="#events" class="btn-primary">
+                    <span>Explore Events</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#create" class="btn-secondary">
+                    <span>Organize an Event</span>
+                    <i class="fas fa-plus"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-image" data-aos="fade-left">
+            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1600" alt="Event Management" class="parallax-image">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search & Filter Bar -->
+    <section class="search-bar">
+        <div class="search-container">
+            <div class="search-input">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search events, colleges, or categories...">
+            </div>
+            <div class="search-filters">
+                <select class="filter-select">
+                    <option value="">All Categories</option>
+                    <option value="hackathon">Hackathon</option>
+                    <option value="seminar">Seminar</option>
+                    <option value="workshop">Workshop</option>
+                    <option value="cultural">Cultural</option>
+                </select>
+                <input type="date" class="date-filter">
+                <button class="btn-filter">
+                    <i class="fas fa-filter"></i>
+                    More Filters
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Events -->
+    <section id="events" class="featured-events">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Featured Events</h2>
+            <p>Discover exciting events happening across campuses</p>
+        </div>
+
+        <div class="events-grid">
+            <!-- Event cards will be dynamically loaded -->
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="section-header" data-aos="fade-up">
+            <h2>How EventEase Works</h2>
+            <p>Three simple steps to get started</p>
+        </div>
+
+        <div class="steps-container">
+            <div class="step" data-aos="fade-up" data-aos-delay="100">
+                <div class="step-icon">
+                    <i class="fas fa-user-plus"></i>
+                </div>
+                <h3>Sign Up</h3>
+                <p>Create your account in minutes</p>
+            </div>
+            <div class="step" data-aos="fade-up" data-aos-delay="200">
+                <div class="step-icon">
+                    <i class="fas fa-calendar-plus"></i>
+                </div>
+                <h3>Host Events</h3>
+                <p>Create and manage your events</p>
+            </div>
+            <div class="step" data-aos="fade-up" data-aos-delay="300">
+                <div class="step-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>Get Certificates</h3>
+                <p>Generate certificates for participants</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Features -->
+    <section id="features" class="platform-features">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Platform Features</h2>
+            <p>Everything you need to manage successful events</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card" data-aos="fade-up">
+                <i class="fas fa-user-check"></i>
+                <h3>Registration</h3>
+                <p>Easy registration and ticketing system</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-users"></i>
+                <h3>Team Management</h3>
+                <p>Organize teams and assign roles</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-clipboard-check"></i>
+                <h3>Attendance</h3>
+                <p>Track attendance with QR codes</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-certificate"></i>
+                <h3>Certificates</h3>
+                <p>Generate and distribute certificates</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                <i class="fas fa-chart-line"></i>
+                <h3>Dashboard</h3>
+                <p>Real-time analytics and insights</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Events Ticker -->
+    <section class="live-events">
+        <div class="ticker-container">
+            <div class="ticker-label">Live Now</div>
+            <div class="ticker-content">
+                <!-- Live events will be dynamically updated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="section-header" data-aos="fade-up">
+            <h2>What Our Users Say</h2>
+            <p>Trusted by students and administrators</p>
+        </div>
+
+        <div class="testimonials-carousel" data-aos="fade-up">
+            <!-- Testimonial cards will be dynamically loaded -->
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Latest Updates</h2>
+            <p>News, guides, and event stories</p>
+        </div>
+
+        <div class="blog-grid">
+            <!-- Blog posts will be dynamically loaded -->
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="cta-content" data-aos="fade-up">
+            <h2>Ready to Power Your Campus Events?</h2>
+            <p>Join thousands of event organizers creating amazing experiences</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Stay updated with our latest news and events</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 EventEase. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
